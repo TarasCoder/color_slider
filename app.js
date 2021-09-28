@@ -39,8 +39,12 @@ $( document ).ready(function() {
         // $(".sliderValue").text(value);
 
   switch (Number(value)) {
+    case 0:
+    nonActiveSquares(value);
+      break;
     case 1:
     nonActiveSquares(value);
+    activeSquares(value);
       break;
     case 2:
     nonActiveSquares(value);
